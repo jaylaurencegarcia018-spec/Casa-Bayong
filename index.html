@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Casa Bayong — Handcrafted Filipino Artisan Bags</title>
+  <meta name="description" content="Luxury handcrafted bayong bags painted with Filipino creativity and culture. Artisan-made, sustainably crafted, uniquely yours."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=Poppins:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════
+       PRELOADER
+  ═══════════════════════════════════ -->
+  <div id="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-logo">Casa Bayong</div>
+      <div class="preloader-line"><span></span></div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════
+       CUSTOM CURSOR
+  ═══════════════════════════════════ -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ═══════════════════════════════════
+       NAVBAR
+  ═══════════════════════════════════ -->
+  <nav id="navbar">
+    <div class="nav-container">
+        <a href="#home" class="nav-logo">
+        <img src="images/logo.png" alt="Casa Bayong Logo" class="logo-img">
+        <span class="logo-text">
+            Casa <em>Bayong</em>
+        </span>
+        </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#products" class="nav-link">Products</a></li>
+        <li><a href="#about" class="nav-link">About Us</a></li>
+        <li class="nav-cta"><a href="#products" class="btn-shop">Shop Now</a></li>
+      </ul>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile overlay -->
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+
+  <!-- ═══════════════════════════════════
+       HERO SECTION
+  ═══════════════════════════════════ -->
+  <section id="home" class="hero">
+
+    <!-- Tropical leaf decorations -->
+    <div class="leaf leaf-tl">
+      <svg viewBox="0 0 200 400" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20,380 Q-60,200 80,20 Q140,10 160,80 Q180,160 100,220 Q60,260 20,380Z" fill="currentColor"/>
+        <line x1="80" y1="20" x2="20" y2="380" stroke="rgba(0,0,0,0.15)" stroke-width="2"/>
+        <line x1="80" y1="20" x2="60" y2="120" stroke="rgba(0,0,0,0.1)" stroke-width="1"/>
+        <line x1="80" y1="20" x2="100" y2="100" stroke="rgba(0,0,0,0.1)" stroke-width="1"/>
+        <line x1="80" y1="20" x2="40" y2="80" stroke="rgba(0,0,0,0.1)" stroke-width="1"/>
+      </svg>
+    </div>
+    <div class="leaf leaf-tr">
+      <svg viewBox="0 0 200 400" xmlns="http://www.w3.org/2000/svg">
+        <path d="M180,380 Q260,200 120,20 Q60,10 40,80 Q20,160 100,220 Q140,260 180,380Z" fill="currentColor"/>
+        <line x1="120" y1="20" x2="180" y2="380" stroke="rgba(0,0,0,0.15)" stroke-width="2"/>
+        <line x1="120" y1="20" x2="140" y2="120" stroke="rgba(0,0,0,0.1)" stroke-width="1"/>
+        <line x1="120" y1="20" x2="100" y2="100" stroke="rgba(0,0,0,0.1)" stroke-width="1"/>
+        <line x1="120" y1="20" x2="160" y2="80" stroke="rgba(0,0,0,0.1)" stroke-width="1"/>
+      </svg>
+    </div>
+    <div class="leaf leaf-bl">
+      <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10,280 Q-40,150 100,10 Q160,0 180,70 Q200,150 120,200 Q70,240 10,280Z" fill="currentColor"/>
+        <line x1="100" y1="10" x2="10" y2="280" stroke="rgba(0,0,0,0.12)" stroke-width="2"/>
+      </svg>
+    </div>
+    <div class="leaf leaf-br">
+      <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+        <path d="M290,280 Q340,150 200,10 Q140,0 120,70 Q100,150 180,200 Q230,240 290,280Z" fill="currentColor"/>
+        <line x1="200" y1="10" x2="290" y2="280" stroke="rgba(0,0,0,0.12)" stroke-width="2"/>
+      </svg>
+    </div>
+
+    <!-- Hero visual: wooden shelf with bags -->
+    <div class="hero-shelf-scene">
+      <div class="shelf-plank"></div>
+      <div class="shelf-bags">
+        <div class="shelf-bag bag-1">
+          <div class="bag-body">
+            <div class="bag-weave"></div>
+            <div class="bag-handle"></div>
+            <div class="bag-tag">₱1,200</div>
+            <div class="bag-paint-deco"></div>
+          </div>
+        </div>
+        <div class="shelf-bag bag-2">
+          <div class="bag-body">
+            <div class="bag-weave style2"></div>
+            <div class="bag-handle wide"></div>
+            <div class="bag-tag">₱1,450</div>
+          </div>
+        </div>
+        <div class="shelf-bag bag-3">
+          <div class="bag-body tall">
+            <div class="bag-weave style3"></div>
+            <div class="bag-handle loop"></div>
+            <div class="bag-tag">₱1,800</div>
+            <div class="bag-paint-deco deco2"></div>
+          </div>
+        </div>
+        <div class="shelf-bag bag-4">
+          <div class="bag-body small">
+            <div class="bag-weave style4"></div>
+            <div class="bag-handle"></div>
+            <div class="bag-tag">₱980</div>
+          </div>
+        </div>
+        <div class="shelf-bag bag-5">
+          <div class="bag-body">
+            <div class="bag-weave style2"></div>
+            <div class="bag-handle wide"></div>
+            <div class="bag-tag">₱1,650</div>
+            <div class="bag-paint-deco deco3"></div>
+          </div>
+        </div>
+      </div>
+      <div class="shelf-shadow"></div>
+    </div>
+
+    <!-- Dark gradient overlay -->
+    <div class="hero-overlay"></div>
+
+    <!-- Hero content -->
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal-up" data-delay="0">✦ Filipino Artisan Craftsmanship ✦</p>
+      <h1 class="hero-title reveal-up" data-delay="1">
+        Handcrafted Bayong Bags<br/>
+        <em>for Modern Trendsetters</em>
+      </h1>
+      <p class="hero-subtitle reveal-up" data-delay="2">
+        Unique artisan bags painted with Filipino creativity and culture.
+      </p>
+      <div class="hero-actions reveal-up" data-delay="3">
+        <a href="#products" class="btn-primary">
+          <span>Shop Now</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+        <a href="#about" class="btn-outline">
+          <span>Explore Collection</span>
+        </a>
+      </div>
+      <div class="hero-stats reveal-up" data-delay="4">
+        <div class="stat"><strong>1</strong><span>Designs</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><strong>100%</strong><span>Handmade</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><strong>All-Natural</strong><span>Materials</span></div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"><div class="scroll-dot"></div></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       MARQUEE STRIP
+  ═══════════════════════════════════ -->
+  <div class="marquee-strip">
+    <div class="marquee-track">
+      <span>Handcrafted with Love</span>
+      <span class="marquee-dot">✦</span>
+      <span>Filipino Heritage</span>
+      <span class="marquee-dot">✦</span>
+      <span>Sustainable Materials</span>
+      <span class="marquee-dot">✦</span>
+      <span>Artisan-Painted</span>
+      <span class="marquee-dot">✦</span>
+      <span>Locally Sourced</span>
+      <span class="marquee-dot">✦</span>
+      <span>Limited Editions</span>
+      <span class="marquee-dot">✦</span>
+      <span>Handcrafted with Love</span>
+      <span class="marquee-dot">✦</span>
+      <span>Filipino Heritage</span>
+      <span class="marquee-dot">✦</span>
+      <span>Sustainable Materials</span>
+      <span class="marquee-dot">✦</span>
+      <span>Artisan-Painted</span>
+      <span class="marquee-dot">✦</span>
+      <span>Locally Sourced</span>
+      <span class="marquee-dot">✦</span>
+      <span>Limited Editions</span>
+      <span class="marquee-dot">✦</span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════
+       PRODUCTS SECTION
+  ═══════════════════════════════════ -->
+  <section id="products" class="products-section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <p class="section-eyebrow">Our Collection</p>
+        <h2 class="section-title">Artisan <em>Bayong</em> Bags</h2>
+        <p class="section-subtitle">Every piece is hand-woven, hand-painted, and made with love in the Philippines.</p>
+      </div>
+
+      <!-- Filter tabs -->
+      <div class="filter-tabs reveal-up">
+        <button class="filter-btn active" data-filter="all">All Pieces</button>
+        <button class="filter-btn" data-filter="tote">Tote Bags</button>
+        <button class="filter-btn" data-filter="clutch">Clutch Bags</button>
+        <button class="filter-btn" data-filter="shoulder">Shoulder Bags</button>
+        <button class="filter-btn" data-filter="mini">Mini Bags</button>
+      </div>
+
+      <!-- Products grid -->
+      <div class="products-grid" id="productsGrid">
+
+        <article class="product-card reveal-up" data-category="tote" data-delay="0">
+          <div class="product-img-wrap">
+            <div class="product-img-placeholder tote-classic">
+              <div class="bag-illustration tote"></div>
+            </div>
+            <div class="product-overlay">
+              <button class="quick-view">Quick View</button>
+            </div>
+            <div class="product-badge">Bestseller</div>
+          </div>
+          <div class="product-info">
+            <div class="product-meta">
+              <span class="product-category">Tote Bag</span>
+              <div class="product-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <span>(48)</span>
+              </div>
+            </div>
+            <h3 class="product-name">Sampaguita Classic Tote</h3>
+            <p class="product-desc">Hand-woven pandan leaves with delicate sampaguita flower paintings. Each piece uniquely yours.</p>
+            <div class="product-footer">
+              <div class="product-price">
+                <span class="price-current">₱1,250</span>
+                <span class="price-old">₱1,500</span>
+              </div>
+              <button class="btn-cart"><i class="fas fa-bag-shopping"></i> Buy Now</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card reveal-up" data-category="shoulder" data-delay="1">
+          <div class="product-img-wrap">
+            <div class="product-img-placeholder shoulder-mayon">
+              <div class="bag-illustration shoulder"></div>
+            </div>
+            <div class="product-overlay">
+              <button class="quick-view">Quick View</button>
+            </div>
+            <div class="product-badge new">New</div>
+          </div>
+          <div class="product-info">
+            <div class="product-meta">
+              <span class="product-category">Shoulder Bag</span>
+              <div class="product-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-stroke"></i>
+                <span>(31)</span>
+              </div>
+            </div>
+            <h3 class="product-name">Mayon Sunset Sling</h3>
+            <p class="product-desc">Inspired by Mayon Volcano's majestic silhouette, hand-painted at golden hour dusk.</p>
+            <div class="product-footer">
+              <div class="product-price">
+                <span class="price-current">₱1,800</span>
+              </div>
+              <button class="btn-cart"><i class="fas fa-bag-shopping"></i> Buy Now</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card reveal-up" data-category="clutch" data-delay="2">
+          <div class="product-img-wrap">
+            <div class="product-img-placeholder clutch-gold">
+              <div class="bag-illustration clutch"></div>
+            </div>
+            <div class="product-overlay">
+              <button class="quick-view">Quick View</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-meta">
+              <span class="product-category">Clutch Bag</span>
+              <div class="product-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <span>(62)</span>
+              </div>
+            </div>
+            <h3 class="product-name">Pahiyas Fiesta Clutch</h3>
+            <p class="product-desc">Vibrant kiping motifs and fiesta patterns celebrate the joy of Filipino harvest festivals.</p>
+            <div class="product-footer">
+              <div class="product-price">
+                <span class="price-current">₱980</span>
+              </div>
+              <button class="btn-cart"><i class="fas fa-bag-shopping"></i> Buy Now</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card reveal-up" data-category="tote" data-delay="3">
+          <div class="product-img-wrap">
+            <div class="product-img-placeholder tote-dark">
+              <div class="bag-illustration tote dark"></div>
+            </div>
+            <div class="product-overlay">
+              <button class="quick-view">Quick View</button>
+            </div>
+            <div class="product-badge limited">Limited</div>
+          </div>
+          <div class="product-info">
+            <div class="product-meta">
+              <span class="product-category">Tote Bag</span>
+              <div class="product-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <span>(27)</span>
+              </div>
+            </div>
+            <h3 class="product-name">Narra Wood Artisan Tote</h3>
+            <p class="product-desc">Dark-stained buri weave mimicking the rich grain of Philippine narra hardwood. Bold and earthy.</p>
+            <div class="product-footer">
+              <div class="product-price">
+                <span class="price-current">₱2,100</span>
+                <span class="price-old">₱2,500</span>
+              </div>
+              <button class="btn-cart"><i class="fas fa-bag-shopping"></i> Buy Now</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card reveal-up" data-category="mini" data-delay="4">
+          <div class="product-img-wrap">
+            <div class="product-img-placeholder mini-floral">
+              <div class="bag-illustration mini"></div>
+            </div>
+            <div class="product-overlay">
+              <button class="quick-view">Quick View</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-meta">
+              <span class="product-category">Mini Bag</span>
+              <div class="product-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                <span>(19)</span>
+              </div>
+            </div>
+            <h3 class="product-name">Ilang-Ilang Mini Bayong</h3>
+            <p class="product-desc">Petite and elegant with hand-painted ilang-ilang blooms, perfect for evening outings.</p>
+            <div class="product-footer">
+              <div class="product-price">
+                <span class="price-current">₱850</span>
+              </div>
+              <button class="btn-cart"><i class="fas fa-bag-shopping"></i> Buy Now</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card reveal-up" data-category="shoulder" data-delay="5">
+          <div class="product-img-wrap">
+            <div class="product-img-placeholder shoulder-tribal">
+              <div class="bag-illustration shoulder tribal"></div>
+            </div>
+            <div class="product-overlay">
+              <button class="quick-view">Quick View</button>
+            </div>
+            <div class="product-badge new">New</div>
+          </div>
+          <div class="product-info">
+            <div class="product-meta">
+              <span class="product-category">Shoulder Bag</span>
+              <div class="product-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <span>(44)</span>
+              </div>
+            </div>
+            <h3 class="product-name">Cordillera Tribal Satchel</h3>
+            <p class="product-desc">Inspired by Cordillera indigenous weaving patterns, rendered in natural plant-dyed threads.</p>
+            <div class="product-footer">
+              <div class="product-price">
+                <span class="price-current">₱2,400</span>
+              </div>
+              <button class="btn-cart"><i class="fas fa-bag-shopping"></i> Buy Now</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="products-cta reveal-up">
+        <a href="#" class="btn-primary">
+          <span>View Full Collection</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       TESTIMONIALS
+  ═══════════════════════════════════ -->
+  <section class="testimonials-section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <p class="section-eyebrow">What They Say</p>
+        <h2 class="section-title">Loved by <em>Collectors</em></h2>
+      </div>
+      <div class="testimonials-track" id="testimonialsTrack">
+        <div class="testimonial-card">
+          <div class="testi-quote"><i class="fas fa-quote-left"></i></div>
+          <p>"My Casa Bayong tote is the most complimented bag I own. Everyone asks where I got it. The hand-painting is absolutely museum-worthy."</p>
+          <div class="testi-author">
+            <div class="testi-avatar av1">JL</div>
+            <div>
+              <strong>Jay Laurence Garcia</strong>
+              <span>Quezon City</span>
+            </div>
+          </div>
+          <div class="testi-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testi-quote"><i class="fas fa-quote-left"></i></div>
+          <p>"I bought three pieces as gifts from abroad. My family in Manila cried — they said it felt like holding a piece of the Philippines. Pure artistry."</p>
+          <div class="testi-author">
+            <div class="testi-avatar av2">JL</div>
+            <div>
+              <strong>Jay Laurence Garcia</strong>
+              <span>Quezon City</span>
+            </div>
+          </div>
+          <div class="testi-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testi-quote"><i class="fas fa-quote-left"></i></div>
+          <p>"The craftsmanship is unbelievable. You can feel how much care goes into each stitch and every brushstroke. Worth every peso and more."</p>
+          <div class="testi-author">
+            <div class="testi-avatar av3">JL</div>
+            <div>
+              <strong>Jay Laurence Garcia</strong>
+              <span>Quezon City</span>
+            </div>
+          </div>
+          <div class="testi-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-stroke"></i>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testi-quote"><i class="fas fa-quote-left"></i></div>
+          <p>"I've been buying bayong bags for years — nothing compares to Casa Bayong's quality. The Pahiyas Clutch is my forever favourite."</p>
+          <div class="testi-author">
+            <div class="testi-avatar av4">JL</div>
+            <div>
+              <strong>Jay Laurence Garcia</strong>
+              <span>Quezon City</span>
+            </div>
+          </div>
+          <div class="testi-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+        </div>
+      </div>
+      <div class="testi-dots" id="testiDots"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       ABOUT SECTION
+  ═══════════════════════════════════ -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual reveal-left">
+          <div class="about-img-main">
+            <div class="artisan-scene">
+              <div class="artisan-hands">
+                <div class="hand-weaving"></div>
+              </div>
+              <div class="artisan-bag-wip"></div>
+              <div class="artisan-tools">
+                <div class="tool brush"></div>
+                <div class="tool needle"></div>
+                <div class="tool thread"></div>
+              </div>
+            </div>
+          </div>
+          <div class="about-img-accent">
+            <div class="leaf-accent-small"></div>
+            <p class="accent-quote">"Every bag tells<br/>a Filipino story."</p>
+          </div>
+          <div class="about-badge-float">
+            <div class="float-badge">
+              <div class="badge-inner">
+                <strong>Since</strong>
+                <span>2026</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-text reveal-right">
+          <p class="section-eyebrow">Our Story</p>
+          <h2 class="section-title">Crafted from the<br/><em>Heart of the Philippines</em></h2>
+          <p class="about-lead">Casa Bayong was born from a single belief: that the humble bayong — the traditional Filipino woven bag — deserves its place on the world stage.</p>
+          <p class="about-body">Experience the charm of handcrafted artistry with our DIY painted native bags, thoughtfully made and designed with love. Each piece is uniquely hand-painted, making no two bags exactly the same. When you choose our products, you’re not just purchasing a bag, you’re supporting local creativity, culture, and passion. Perfect for daily use or as a special gift, our bags bring a distinctive and artistic touch to your style. Join us from the very beginning of our journey and carry something truly unique with you.</p>
+
+          <div class="about-pillars">
+            <div class="pillar">
+              <div class="pillar-icon"><i class="fas fa-seedling"></i></div>
+              <div>
+                <strong>Sustainable</strong>
+                <p>All-natural, biodegradable materials from responsibly managed sources.</p>
+              </div>
+            </div>
+            <div class="pillar">
+              <div class="pillar-icon"><i class="fas fa-hands"></i></div>
+              <div>
+                <strong>Handcrafted</strong>
+                <p>Zero machines. Every stitch and stroke is done by skilled human hands.</p>
+              </div>
+            </div>
+            <div class="pillar">
+              <div class="pillar-icon"><i class="fas fa-heart"></i></div>
+              <div>
+                <strong>Community-First</strong>
+                <p>Fairly compensating over 50 artisan families across the Philippines.</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="#products" class="btn-primary">
+            <span>Discover Our Bags</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       GALLERY STRIP
+  ═══════════════════════════════════ -->
+  <section class="gallery-section">
+    <div class="gallery-strip">
+      <div class="gallery-item gi-1">
+        <div class="gallery-art art1"></div>
+        <div class="gallery-hover-text">Tote Collection</div>
+      </div>
+      <div class="gallery-item gi-2">
+        <div class="gallery-art art2"></div>
+        <div class="gallery-hover-text">Artisan Process</div>
+      </div>
+      <div class="gallery-item gi-3 gallery-tall">
+        <div class="gallery-art art3"></div>
+        <div class="gallery-hover-text">Heritage Weaves</div>
+      </div>
+      <div class="gallery-item gi-4">
+        <div class="gallery-art art4"></div>
+        <div class="gallery-hover-text">Hand-Painting</div>
+      </div>
+      <div class="gallery-item gi-5">
+        <div class="gallery-art art5"></div>
+        <div class="gallery-hover-text">Limited Editions</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════ -->
+  <footer id="contact">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="#home" class="nav-logo">
+        <img src="images/logo.png" alt="Casa Bayong Logo" class="logo-img">
+        <span class="logo-text">
+            Casa <em>Bayong</em>
+        </span>
+        </a>
+            <p>Handcrafted Filipino artisan bags that carry culture, creativity, and craftsmanship in every weave.</p>
+            <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=61589946520135"
+            class="social-link"
+            aria-label="Facebook"
+            target="_blank"
+            rel="noopener noreferrer">
+            <i class="fab fa-facebook-f"></i>
+            </a>
+              <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="social-link" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+              <a href="#" class="social-link" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+              <a href="#" class="social-link" aria-label="Shopee"><i class="fas fa-store"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#products">Products</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#">Our Process</a></li>
+              <li><a href="#">Custom Orders</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Collections</h4>
+            <ul>
+              <li><a href="#">Tote Bags</a></li>
+              <li><a href="#">Shoulder Bags</a></li>
+              <li><a href="#">Clutch Bags</a></li>
+              <li><a href="#">Mini Bags</a></li>
+              <li><a href="#">Limited Editions</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col footer-contact">
+            <h4>Get in Touch</h4>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Quezon City</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:jaylaurencegarcia018@gmail.com">jaylaurencegarcia018@gmail.com</a>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <a href="tel:+639151988212">+63 915 198 8212</a>
+            </div>
+            <div class="contact-item">
+              <i class="fab fa-shopee"></i>
+              <a href="#">Shopee: CasaBayong.Official</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2026 Casa Bayong. All Rights Reserved. Made with <i class="fas fa-heart"></i> in the Philippines.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- Cart notification toast -->
+  <div class="toast" id="cartToast">
+    <i class="fas fa-bag-shopping"></i>
+    <span>Added to your bag!</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
